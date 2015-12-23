@@ -123,7 +123,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkH-SF-bOX">
-                                            <rect key="frame" x="0.0" y="119" width="150" height="30"/>
+                                            <rect key="frame" x="0.0" y="120" width="150" height="30"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8N-SM-crB">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
@@ -136,7 +136,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="z8N-SM-crB" firstAttribute="leading" secondItem="nkH-SF-bOX" secondAttribute="leading" id="Cvi-Td-Y3f"/>
                                                 <constraint firstAttribute="bottom" secondItem="z8N-SM-crB" secondAttribute="bottom" id="Mfx-8H-uFg"/>
@@ -152,7 +152,7 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="yv0-PZ-I66" firstAttribute="leading" secondItem="KE5-Zz-xYt" secondAttribute="leading" id="1J2-hV-Mvq"/>
-                                    <constraint firstAttribute="bottom" secondItem="nkH-SF-bOX" secondAttribute="bottom" constant="1" id="G7m-K8-uht"/>
+                                    <constraint firstAttribute="bottom" secondItem="nkH-SF-bOX" secondAttribute="bottom" id="G7m-K8-uht"/>
                                     <constraint firstItem="yv0-PZ-I66" firstAttribute="top" secondItem="KE5-Zz-xYt" secondAttribute="top" id="PrH-yn-JFw"/>
                                     <constraint firstAttribute="trailing" secondItem="yv0-PZ-I66" secondAttribute="trailing" id="bjj-eq-QBe"/>
                                     <constraint firstAttribute="bottom" secondItem="yv0-PZ-I66" secondAttribute="bottom" id="peG-lO-AJO"/>
