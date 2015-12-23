@@ -106,20 +106,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kAz-Sg-7rD">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="150" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KE5-Zz-xYt">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserCollectionViewCell" id="KE5-Zz-xYt" customClass="UserCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yv0-PZ-I66">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkH-SF-bOX">
+                                            <rect key="frame" x="0.0" y="119" width="150" height="30"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8N-SM-crB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nick" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ET-OT-CWQ">
+                                                    <rect key="frame" x="102" y="5" width="41" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="z8N-SM-crB" firstAttribute="leading" secondItem="nkH-SF-bOX" secondAttribute="leading" id="Cvi-Td-Y3f"/>
+                                                <constraint firstAttribute="bottom" secondItem="z8N-SM-crB" secondAttribute="bottom" id="Mfx-8H-uFg"/>
+                                                <constraint firstItem="z8N-SM-crB" firstAttribute="top" secondItem="nkH-SF-bOX" secondAttribute="top" id="TGD-Rl-CMb"/>
+                                                <constraint firstAttribute="height" constant="30" id="Xh2-pS-dem"/>
+                                                <constraint firstItem="0ET-OT-CWQ" firstAttribute="centerY" secondItem="nkH-SF-bOX" secondAttribute="centerY" id="Z4z-X0-rCR"/>
+                                                <constraint firstAttribute="trailing" secondItem="0ET-OT-CWQ" secondAttribute="trailing" constant="7" id="ctB-q2-fxx"/>
+                                                <constraint firstAttribute="trailing" secondItem="z8N-SM-crB" secondAttribute="trailing" id="qb8-Rc-fcv"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="yv0-PZ-I66" firstAttribute="leading" secondItem="KE5-Zz-xYt" secondAttribute="leading" id="1J2-hV-Mvq"/>
+                                    <constraint firstAttribute="bottom" secondItem="nkH-SF-bOX" secondAttribute="bottom" constant="1" id="G7m-K8-uht"/>
+                                    <constraint firstItem="yv0-PZ-I66" firstAttribute="top" secondItem="KE5-Zz-xYt" secondAttribute="top" id="PrH-yn-JFw"/>
+                                    <constraint firstAttribute="trailing" secondItem="yv0-PZ-I66" secondAttribute="trailing" id="bjj-eq-QBe"/>
+                                    <constraint firstAttribute="bottom" secondItem="yv0-PZ-I66" secondAttribute="bottom" id="peG-lO-AJO"/>
+                                    <constraint firstItem="nkH-SF-bOX" firstAttribute="leading" secondItem="KE5-Zz-xYt" secondAttribute="leading" id="u97-FR-Jab"/>
+                                    <constraint firstAttribute="trailing" secondItem="nkH-SF-bOX" secondAttribute="trailing" id="ziU-tT-bqO"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>
