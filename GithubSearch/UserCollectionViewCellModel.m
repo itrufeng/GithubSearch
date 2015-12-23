@@ -30,7 +30,8 @@
 
 - (NSString *)nickName
 {
-  return self.user.loginName;
+  NSString *capitalized = [[[self.user.loginName substringToIndex:1] uppercaseString] stringByAppendingString:[self.user.loginName substringFromIndex:1]];
+  return capitalized;
 }
 
 
