@@ -5,6 +5,7 @@
 
 #import "ListingViewController.h"
 #import "UserCollectionViewCell.h"
+#import "UserCollectionViewCellModel.h"
 
 @interface ListingViewController () <UICollectionViewDataSource>
 
@@ -23,7 +24,9 @@
 {
   UserCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UserCollectionViewCell"
                                                                                   forIndexPath:indexPath];
-
+  User *user = [[User alloc] initWithDict:@{@"avatar_url": @"https://avatars.githubusercontent.com/u/1?v=3", @"login": @"mojombo"}];
+  UserCollectionViewCellModel *model = [[UserCollectionViewCellModel alloc] initWithUser:user];
+  [cell configCellModel:model];
   return cell;
 }
 
