@@ -6,6 +6,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class ListingViewModel;
+
 @interface ListingViewController : UICollectionViewController
+
+- (void)configListingViewModel:(ListingViewModel *)viewModel;
 
 @end

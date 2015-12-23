@@ -6,12 +6,18 @@
 #import "ListingViewController.h"
 #import "UserCollectionViewCell.h"
 #import "UserCollectionViewCellModel.h"
+#import "ListingViewModel.h"
 
 @interface ListingViewController () <UICollectionViewDataSource>
 
 @end
 
 @implementation ListingViewController
+
+- (void)configListingViewModel:(ListingViewModel *)viewModel
+{
+
+}
 
 #pragma mark - UICollectionViewDataSource
 
@@ -29,6 +35,5 @@
   [cell configCellModel:model];
   return cell;
 }
-
 
 @end
