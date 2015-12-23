@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NetworkService.h"
 
 @interface LoginViewController : UIViewController
 
+@property (nonatomic, strong) NetworkService *service;
 
 @end
 

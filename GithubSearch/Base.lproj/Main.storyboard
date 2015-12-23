@@ -48,6 +48,10 @@
                             <constraint firstItem="3h6-kg-soI" firstAttribute="top" secondItem="EpE-PJ-Jj2" secondAttribute="bottom" constant="8" id="p8r-wn-fRA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="3h6-kg-soI" id="Rbd-0a-TlS"/>
+                        <outlet property="usernameTextField" destination="EpE-PJ-Jj2" id="Y69-Px-Q7h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
