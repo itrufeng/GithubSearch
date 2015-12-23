@@ -4,14 +4,35 @@
 //
 
 #import "SearchViewController.h"
+#import "NetworkService.h"
 
+@interface SearchViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
+
+@end
 
 @implementation SearchViewController
 
-- (IBAction)onSearch:(id)sender {
-  UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ListingViewController"];
-  [self.navigationController showViewController:controller
-                                         sender:nil];
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  self.service = [NetworkService new];
+}
+
+
+- (IBAction)onSearch:(id)sender
+{
+  [self.service getWithurl:[NSURL URLWithString:@"https://api.github.com/search/users"]
+                 parameter:@{@"q" : self.searchTextField.text}
+                      fail:^(NSError *error) {
+
+                      }
+                   success:^(NSDictionary *result) {
+                     UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ListingViewController"];
+                     [self.navigationController showViewController:controller
+                                                            sender:nil];
+                   }];
 }
 
 @end

@@ -6,6 +6,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class NetworkService;
+
 @interface SearchViewController : UIViewController
+
+@property (nonatomic, strong) NetworkService *service;
 
 @end
