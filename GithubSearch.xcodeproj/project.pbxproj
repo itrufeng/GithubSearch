@@ -18,6 +18,7 @@
 		745EE2AB1C2ACE7C003931D6 /* GithubSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE2AA1C2ACE7C003931D6 /* GithubSearchTests.m */; };
 		745EE2B41C2ACEB0003931D6 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745EE2971C2ACDD7003931D6 /* Kiwi.framework */; };
 		A1695195874A3022281C84AF /* ListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695E43470CB80C052E5DEF /* ListingViewController.m */; };
+		A16955E8EE8202423627A0B8 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695F18D04F6DD90A497D6C /* UserService.m */; };
 		A169560CFDF2E6F822AD879D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695C1C030E1A0DA44932CD /* Employee.m */; };
 		A169570A02B01C69A80EE192 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = A169519D40645A8860507D3B /* NetworkService.m */; };
 		A1695715DF72F2DB50090BE0 /* ListingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695188C5ED075CA2EAF7A6 /* ListingViewModel.m */; };
@@ -157,11 +158,13 @@
 		A1695739CBBAAECF3A5F1DF3 /* NSArray+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
 		A16957B056F6662775B068A7 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		A1695890DD1BABF70CF0B1E8 /* UserCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCollectionViewCellModel.h; sourceTree = "<group>"; };
+		A16959B956342FD8FB6DFDDC /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		A1695A9B25C5BD9AAC8F9CFF /* ListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingViewController.h; sourceTree = "<group>"; };
 		A1695AC79D61B80E57A88252 /* UserCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCollectionViewCellModel.m; sourceTree = "<group>"; };
 		A1695B486F09EE7EDDCAADD6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		A1695C1C030E1A0DA44932CD /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		A1695E43470CB80C052E5DEF /* ListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingViewController.m; sourceTree = "<group>"; };
+		A1695F18D04F6DD90A497D6C /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +326,8 @@
 			children = (
 				A169519D40645A8860507D3B /* NetworkService.m */,
 				A16951DEF84B4519FBD9D6C8 /* NetworkService.h */,
+				A1695F18D04F6DD90A497D6C /* UserService.m */,
+				A16959B956342FD8FB6DFDDC /* UserService.h */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				A1695F120E1D2580899B4CF3 /* UserCollectionViewCellModel.m in Sources */,
 				A1695715DF72F2DB50090BE0 /* ListingViewModel.m in Sources */,
 				A1695A4B60FC55AD01EFC0A5 /* NSArray+Functional.m in Sources */,
+				A16955E8EE8202423627A0B8 /* UserService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
