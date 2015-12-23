@@ -79,7 +79,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TKa-CY-Kby">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="5di-tD-opA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="5di-tD-opA">
+                            <connections>
+                                <action selector="onSearch:" destination="oFM-5N-jgb" id="sSU-gC-DYw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42f-GZ-PYB" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -20,6 +20,10 @@
 }
 
 - (IBAction)onLogin:(id)sender {
+  UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchNavigationViewController"];
+  [self presentViewController:controller
+                     animated:YES
+                   completion:NULL];
 }
 
 @end

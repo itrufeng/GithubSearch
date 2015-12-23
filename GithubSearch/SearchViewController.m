@@ -8,4 +8,10 @@
 
 @implementation SearchViewController
 
+- (IBAction)onSearch:(id)sender {
+  UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ListingViewController"];
+  [self.navigationController showViewController:controller
+                                         sender:nil];
+}
+
 @end
