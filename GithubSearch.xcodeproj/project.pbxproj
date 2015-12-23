@@ -17,6 +17,8 @@
 		745EE2AB1C2ACE7C003931D6 /* GithubSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE2AA1C2ACE7C003931D6 /* GithubSearchTests.m */; };
 		745EE2B41C2ACEB0003931D6 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745EE2971C2ACDD7003931D6 /* Kiwi.framework */; };
 		A1695195874A3022281C84AF /* ListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695E43470CB80C052E5DEF /* ListingViewController.m */; };
+		A169560CFDF2E6F822AD879D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695C1C030E1A0DA44932CD /* Employee.m */; };
+		A1695A66D51443A77F83BFF6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A169548A5D71370EF206DB23 /* User.m */; };
 		A1695DB95B800645A6197C9B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A169537F54319E4AA3B9A858 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -137,9 +139,13 @@
 		745EE2A81C2ACE7C003931D6 /* GithubSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		745EE2AA1C2ACE7C003931D6 /* GithubSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubSearchTests.m; sourceTree = "<group>"; };
 		745EE2AC1C2ACE7C003931D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1695328C68A11B99192C291 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A169537F54319E4AA3B9A858 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		A169548A5D71370EF206DB23 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A16957B056F6662775B068A7 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		A1695A9B25C5BD9AAC8F9CFF /* ListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingViewController.h; sourceTree = "<group>"; };
 		A1695B486F09EE7EDDCAADD6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		A1695C1C030E1A0DA44932CD /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		A1695E43470CB80C052E5DEF /* ListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +201,7 @@
 				745EE26D1C2AC26F003931D6 /* LaunchScreen.storyboard */,
 				745EE2701C2AC26F003931D6 /* Info.plist */,
 				745EE25F1C2AC26F003931D6 /* Supporting Files */,
+				A169506549C797C997F559B5 /* Models */,
 			);
 			path = GithubSearch;
 			sourceTree = "<group>";
@@ -275,6 +282,17 @@
 				A1695A9B25C5BD9AAC8F9CFF /* ListingViewController.h */,
 			);
 			name = Listing;
+			sourceTree = "<group>";
+		};
+		A169506549C797C997F559B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1695C1C030E1A0DA44932CD /* Employee.m */,
+				A16957B056F6662775B068A7 /* Employee.h */,
+				A169548A5D71370EF206DB23 /* User.m */,
+				A1695328C68A11B99192C291 /* User.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +492,8 @@
 				745EE2611C2AC26F003931D6 /* main.m in Sources */,
 				A1695DB95B800645A6197C9B /* SearchViewController.m in Sources */,
 				A1695195874A3022281C84AF /* ListingViewController.m in Sources */,
+				A169560CFDF2E6F822AD879D /* Employee.m in Sources */,
+				A1695A66D51443A77F83BFF6 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
