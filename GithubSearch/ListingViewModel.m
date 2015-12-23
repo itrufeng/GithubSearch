@@ -6,6 +6,7 @@
 #import "ListingViewModel.h"
 #import "User.h"
 #import "UserCollectionViewCellModel.h"
+#import "NSArray+Functional.h"
 
 @interface ListingViewModel ()
 
@@ -27,7 +28,9 @@
 
 - (NSArray<UserCollectionViewCellModel *> *)userCollectionViewCellModels
 {
-  return nil;
+  return [self.users mapUsingBlock:^id(User *user) {
+    return [[UserCollectionViewCellModel alloc] initWithUser:user];
+  }];
 }
 
 @end
