@@ -7,7 +7,22 @@
 //
 
 #import "UserCollectionViewCell.h"
+#import "UserCollectionViewCellModel.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
+
+@interface UserCollectionViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *avatorImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nickLabel;
+
+@end
 
 @implementation UserCollectionViewCell
+
+- (void)configCellModel:(UserCollectionViewCellModel *)cellModel
+{
+  [self.avatorImageView setImageWithURL:[NSURL URLWithString:[cellModel avatorURL]]];
+  self.nickLabel.text = [cellModel nickName];
+}
 
 @end

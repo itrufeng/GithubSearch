@@ -159,6 +159,10 @@
                                     <constraint firstItem="nkH-SF-bOX" firstAttribute="leading" secondItem="KE5-Zz-xYt" secondAttribute="leading" id="u97-FR-Jab"/>
                                     <constraint firstAttribute="trailing" secondItem="nkH-SF-bOX" secondAttribute="trailing" id="ziU-tT-bqO"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="avatorImageView" destination="yv0-PZ-I66" id="g5I-xB-Y4E"/>
+                                    <outlet property="nickLabel" destination="0ET-OT-CWQ" id="evd-J2-nVB"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

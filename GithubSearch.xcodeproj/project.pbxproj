@@ -22,6 +22,7 @@
 		A169570A02B01C69A80EE192 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = A169519D40645A8860507D3B /* NetworkService.m */; };
 		A1695A66D51443A77F83BFF6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A169548A5D71370EF206DB23 /* User.m */; };
 		A1695DB95B800645A6197C9B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A169537F54319E4AA3B9A858 /* SearchViewController.m */; };
+		A1695F120E1D2580899B4CF3 /* UserCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695AC79D61B80E57A88252 /* UserCollectionViewCellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,7 +150,9 @@
 		A169537F54319E4AA3B9A858 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		A169548A5D71370EF206DB23 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A16957B056F6662775B068A7 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		A1695890DD1BABF70CF0B1E8 /* UserCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCollectionViewCellModel.h; sourceTree = "<group>"; };
 		A1695A9B25C5BD9AAC8F9CFF /* ListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingViewController.h; sourceTree = "<group>"; };
+		A1695AC79D61B80E57A88252 /* UserCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCollectionViewCellModel.m; sourceTree = "<group>"; };
 		A1695B486F09EE7EDDCAADD6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		A1695C1C030E1A0DA44932CD /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		A1695E43470CB80C052E5DEF /* ListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingViewController.m; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 				A1695A9B25C5BD9AAC8F9CFF /* ListingViewController.h */,
 				742CC8D81C2AFE570010AB43 /* UserCollectionViewCell.h */,
 				742CC8D91C2AFE570010AB43 /* UserCollectionViewCell.m */,
+				A1695AC79D61B80E57A88252 /* UserCollectionViewCellModel.m */,
+				A1695890DD1BABF70CF0B1E8 /* UserCollectionViewCellModel.h */,
 			);
 			name = Listing;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				742CC8DA1C2AFE570010AB43 /* UserCollectionViewCell.m in Sources */,
 				A1695A66D51443A77F83BFF6 /* User.m in Sources */,
 				A169570A02B01C69A80EE192 /* NetworkService.m in Sources */,
+				A1695F120E1D2580899B4CF3 /* UserCollectionViewCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class UserCollectionViewCellModel;
+
 @interface UserCollectionViewCell : UICollectionViewCell
+
+- (void)configCellModel:(UserCollectionViewCellModel *)cellModel;
 
 @end
