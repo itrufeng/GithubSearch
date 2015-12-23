@@ -23,7 +23,7 @@
 
 - (IBAction)onSearch:(id)sender
 {
-  [self.service getWithurl:[NSURL URLWithString:@"https://api.github.com/search/users"]
+  [self.service getWithUrl:[NSURL URLWithString:@"https://api.github.com/search/users"]
                  parameter:@{@"q" : self.searchTextField.text}
                       fail:^(NSError *error) {
 

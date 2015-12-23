@@ -24,7 +24,7 @@
 }
 
 - (IBAction)onLogin:(id)sender {
-  [self.service postWithurl:[NSURL URLWithString:@"http://106.187.43.111:3000/login"]
+  [self.service postWithUrl:[NSURL URLWithString:@"http://106.187.43.111:3000/login"]
                   parameter:@{@"email" : @"jizhang@tw.com", @"password" : @"12345"}
                        fail:^(NSError *error) {
 

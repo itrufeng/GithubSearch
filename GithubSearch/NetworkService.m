@@ -9,7 +9,7 @@
 
 @implementation NetworkService
 
-- (void)getWithurl:(NSURL *)url
+- (void)getWithUrl:(NSURL *)url
          parameter:(NSDictionary *)parameter
               fail:(NetworkServiceFail)fail
            success:(NetworkServiceSuccess)success
@@ -26,7 +26,7 @@
                               }];
 }
 
-- (void)postWithurl:(NSURL *)url
+- (void)postWithUrl:(NSURL *)url
           parameter:(NSDictionary *)parameter
                fail:(NetworkServiceFail)fail
             success:(NetworkServiceSuccess)success
