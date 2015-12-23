@@ -13,6 +13,6 @@
 - (instancetype)initWithNetworkService:(NetworkService *)service;
 
 - (void)searchUserWithKeyword:(NSString *)keyword
-                     complete:(void (^)(NSArray<User *> *))complete;
+                     complete:(void (^)(NSArray<User *> *users))complete;
 
 @end

@@ -10,28 +10,29 @@
 
 @interface ListingViewController () <UICollectionViewDataSource>
 
+@property (nonatomic, strong) ListingViewModel *viewModel;
+
 @end
 
 @implementation ListingViewController
 
 - (void)configListingViewModel:(ListingViewModel *)viewModel
 {
-
+  _viewModel = viewModel;
 }
 
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-  return 30;
+  return [[self.viewModel userCollectionViewCellModels] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
   UserCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UserCollectionViewCell"
                                                                                   forIndexPath:indexPath];
-  User *user = [[User alloc] initWithDict:@{@"avatar_url": @"https://avatars.githubusercontent.com/u/1?v=3", @"login": @"mojombo"}];
-  UserCollectionViewCellModel *model = [[UserCollectionViewCellModel alloc] initWithUser:user];
+  UserCollectionViewCellModel *model = [[self.viewModel userCollectionViewCellModels] objectAtIndex:indexPath.row];
   [cell configCellModel:model];
   return cell;
 }

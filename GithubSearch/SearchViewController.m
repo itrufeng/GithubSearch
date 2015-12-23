@@ -5,6 +5,9 @@
 
 #import "SearchViewController.h"
 #import "NetworkService.h"
+#import "UserService.h"
+#import "ListingViewModel.h"
+#import "ListingViewController.h"
 
 @interface SearchViewController ()
 
@@ -17,22 +20,20 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  self.service = [NetworkService new];
+  self.service = [[UserService alloc] initWithNetworkService:[NetworkService new]];
 }
 
 
 - (IBAction)onSearch:(id)sender
 {
-  [self.service getWithUrl:[NSURL URLWithString:@"https://api.github.com/search/users"]
-                 parameter:@{@"q" : self.searchTextField.text}
-                      fail:^(NSError *error) {
-
-                      }
-                   success:^(NSDictionary *result) {
-                     UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ListingViewController"];
-                     [self.navigationController showViewController:controller
-                                                            sender:nil];
-                   }];
+  [self.service searchUserWithKeyword:self.searchTextField.text
+                             complete:^(NSArray<User *> *users) {
+                               ListingViewModel *viewModel = [[ListingViewModel alloc] initWithUsers:users];
+                               ListingViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ListingViewController"];
+                               [controller configListingViewModel:viewModel];
+                               [self.navigationController showViewController:controller
+                                                                      sender:nil];
+                             }];
 }
 
 @end

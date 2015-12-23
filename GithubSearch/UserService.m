@@ -26,7 +26,7 @@
   return self;
 }
 
-- (void)searchUserWithKeyword:(NSString *)keyword complete:(void (^)(NSArray<User *> *))complete
+- (void)searchUserWithKeyword:(NSString *)keyword complete:(void (^)(NSArray<User *> * users))complete
 {
   [self.service getWithUrl:[NSURL URLWithString:@"https://api.github.com/search/users"]
                  parameter:@{@"q" : keyword}
