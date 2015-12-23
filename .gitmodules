@@ -1,0 +1,6 @@
+[submodule "Vendor/AFNetworking"]
+	path = Vendor/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "Vendor/Kiwi"]
+	path = Vendor/Kiwi
+	url = https://github.com/kiwi-bdd/Kiwi.git
