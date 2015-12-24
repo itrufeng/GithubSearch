@@ -17,6 +17,7 @@
 @property (nonatomic, copy, readonly) NSString *email;
 @property (nonatomic, copy, readonly) NSString *reposCount;
 @property (nonatomic, copy, readonly) NSString *followers;
+@property (nonatomic, copy, readonly) NSString *type;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 

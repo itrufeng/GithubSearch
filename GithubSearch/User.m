@@ -16,6 +16,7 @@
 @property (nonatomic, copy, readwrite) NSString *email;
 @property (nonatomic, copy, readwrite) NSString *reposCount;
 @property (nonatomic, copy, readwrite) NSString *followers;
+@property (nonatomic, copy, readwrite) NSString *type;
 
 @end
 
@@ -35,6 +36,7 @@
     _email = dict[@"email"];
     _reposCount = dict[@"public_repos"];
     _followers = dict[@"followers"];
+    _type = dict[@"type"];
   }
   return self;
 }

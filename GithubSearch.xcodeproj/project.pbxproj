@@ -13,7 +13,9 @@
 		13297D4D1C2BD2FE0049FD9A /* ListingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695188C5ED075CA2EAF7A6 /* ListingViewModel.m */; };
 		38D852D237D6D5D147005A5B /* ListingViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D85688999FE41AAC68ACC4 /* ListingViewModelSpec.m */; };
 		38D8552B1A3DA3A4DC5745FE /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D85E12BC9C3DF133FFFDC1 /* LoginService.m */; };
+		38D85A698748E7674E281B5C /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D85B1D1E8EA4BAB0D93A0E /* UIColor+Additions.m */; };
 		38D85ACF300A89D522EFC0BB /* UserCollectionViewCellModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D850CDA03D255C589EA8D8 /* UserCollectionViewCellModelSpec.m */; };
+		38D85F5F5FF56D6A4961240A /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D85B1D1E8EA4BAB0D93A0E /* UIColor+Additions.m */; };
 		742CC8DA1C2AFE570010AB43 /* UserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 742CC8D91C2AFE570010AB43 /* UserCollectionViewCell.m */; };
 		745EE2611C2AC26F003931D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE2601C2AC26F003931D6 /* main.m */; };
 		745EE2641C2AC26F003931D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE2631C2AC26F003931D6 /* AppDelegate.m */; };
@@ -138,8 +140,10 @@
 
 /* Begin PBXFileReference section */
 		38D850CDA03D255C589EA8D8 /* UserCollectionViewCellModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCollectionViewCellModelSpec.m; sourceTree = "<group>"; };
+		38D856269C3940F77D50CF84 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
 		38D85688999FE41AAC68ACC4 /* ListingViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingViewModelSpec.m; sourceTree = "<group>"; };
 		38D85760224F76F196A8E2B6 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		38D85B1D1E8EA4BAB0D93A0E /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
 		38D85E12BC9C3DF133FFFDC1 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		742CC8D81C2AFE570010AB43 /* UserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCollectionViewCell.h; sourceTree = "<group>"; };
 		742CC8D91C2AFE570010AB43 /* UserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCollectionViewCell.m; sourceTree = "<group>"; };
@@ -360,6 +364,8 @@
 			children = (
 				A169513D4D3AD260B6AFCDD3 /* NSArray+Functional.m */,
 				A1695739CBBAAECF3A5F1DF3 /* NSArray+Functional.h */,
+				38D85B1D1E8EA4BAB0D93A0E /* UIColor+Additions.m */,
+				38D856269C3940F77D50CF84 /* UIColor+Additions.h */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -570,6 +576,7 @@
 				A1695A4B60FC55AD01EFC0A5 /* NSArray+Functional.m in Sources */,
 				A16955E8EE8202423627A0B8 /* UserService.m in Sources */,
 				38D8552B1A3DA3A4DC5745FE /* LoginService.m in Sources */,
+				38D85A698748E7674E281B5C /* UIColor+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +591,7 @@
 				13297D4C1C2BD2F40049FD9A /* UserCollectionViewCellModel.m in Sources */,
 				38D852D237D6D5D147005A5B /* ListingViewModelSpec.m in Sources */,
 				38D85ACF300A89D522EFC0BB /* UserCollectionViewCellModelSpec.m in Sources */,
+				38D85F5F5FF56D6A4961240A /* UIColor+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

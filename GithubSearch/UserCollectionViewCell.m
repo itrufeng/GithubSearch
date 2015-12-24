@@ -8,12 +8,14 @@
 
 #import "UserCollectionViewCell.h"
 #import "UserCollectionViewCellModel.h"
+#import "UIColor+Additions.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface UserCollectionViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatorImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nickLabel;
+@property (weak, nonatomic) IBOutlet UIView *nicknameBackgroundView;
 
 @end
 
@@ -23,6 +25,7 @@
 {
   [self.avatorImageView setImageWithURL:[NSURL URLWithString:[cellModel avatorURL]] placeholderImage:nil];
   self.nickLabel.text = [cellModel nickName];
+  self.nicknameBackgroundView.backgroundColor = [UIColor add_colorWithRGBHexString:[cellModel colorHex]];
 }
 
 @end

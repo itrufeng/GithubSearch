@@ -23,13 +23,43 @@ describe(@"UserCollectionViewCellModel", ^{
   });
 
   describe(@"nickName", ^{
-    it(@"shoud equal Tom", ^{
+    it(@"should equal Tom", ^{
       User *user = [User nullMock];
       [user stub:@selector(loginName) andReturn:@"tom"];
       UserCollectionViewCellModel *cellModel = [[UserCollectionViewCellModel alloc] initWithUser:user];
       [[[cellModel nickName] should] equal:@"Tom"];
     });
   });
+
+  describe(@"colorHex", ^{
+    context(@"the type is user", ^{
+      it(@"should equal 000000", ^{
+        User *user = [User nullMock];
+        [user stub:@selector(type) andReturn:@"User"];
+        UserCollectionViewCellModel *cellModel = [[UserCollectionViewCellModel alloc] initWithUser:user];
+        [[[cellModel colorHex] should] equal:@"000000"];
+      });
+    });
+
+    context(@"the type is organization", ^{
+      it(@"should equal FF00FF", ^{
+        User *user = [User nullMock];
+        [user stub:@selector(type) andReturn:@"Organization"];
+        UserCollectionViewCellModel *cellModel = [[UserCollectionViewCellModel alloc] initWithUser:user];
+        [[[cellModel colorHex] should] equal:@"FF00FF"];
+      });
+    });
+
+    context(@"the type is others", ^{
+      it(@"should equal FFFFFF", ^{
+        User *user = [User nullMock];
+        [user stub:@selector(type) andReturn:@"xxx"];
+        UserCollectionViewCellModel *cellModel = [[UserCollectionViewCellModel alloc] initWithUser:user];
+        [[[cellModel colorHex] should] equal:@"FFFFFF"];
+      });
+    });
+  });
+
 });
 
 SPEC_END

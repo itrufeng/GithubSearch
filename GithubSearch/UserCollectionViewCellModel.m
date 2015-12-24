@@ -34,5 +34,19 @@
   return capitalized;
 }
 
+- (NSString *)colorHex
+{
+  if ([self.user.type isEqualToString:@"Organization"])
+  {
+    return @"FF00FF";
+  }
+
+  if ([self.user.type isEqualToString:@"User"])
+  {
+    return @"000000";
+  }
+
+  return @"FFFFFF";
+}
 
 @end

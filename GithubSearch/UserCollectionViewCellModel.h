@@ -14,4 +14,6 @@
 
 - (NSString *)nickName;
 
+- (NSString *)colorHex;
+
 @end
