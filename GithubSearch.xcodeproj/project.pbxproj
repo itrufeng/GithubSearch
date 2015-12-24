@@ -11,6 +11,7 @@
 		13297D4B1C2BD2E30049FD9A /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = A169513D4D3AD260B6AFCDD3 /* NSArray+Functional.m */; };
 		13297D4C1C2BD2F40049FD9A /* UserCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695AC79D61B80E57A88252 /* UserCollectionViewCellModel.m */; };
 		13297D4D1C2BD2FE0049FD9A /* ListingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695188C5ED075CA2EAF7A6 /* ListingViewModel.m */; };
+		38D852D237D6D5D147005A5B /* ListingViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D85688999FE41AAC68ACC4 /* ListingViewModelSpec.m */; };
 		38D8552B1A3DA3A4DC5745FE /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D85E12BC9C3DF133FFFDC1 /* LoginService.m */; };
 		742CC8DA1C2AFE570010AB43 /* UserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 742CC8D91C2AFE570010AB43 /* UserCollectionViewCell.m */; };
 		745EE2611C2AC26F003931D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE2601C2AC26F003931D6 /* main.m */; };
@@ -135,6 +136,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38D85688999FE41AAC68ACC4 /* ListingViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingViewModelSpec.m; sourceTree = "<group>"; };
 		38D85760224F76F196A8E2B6 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
 		38D85E12BC9C3DF133FFFDC1 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		742CC8D81C2AFE570010AB43 /* UserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCollectionViewCell.h; sourceTree = "<group>"; };
@@ -194,6 +196,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38D85567648D63356EC84B7C /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				38D85688999FE41AAC68ACC4 /* ListingViewModelSpec.m */,
+			);
+			name = Listing;
+			sourceTree = "<group>";
+		};
 		745EE2531C2AC26F003931D6 = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +290,7 @@
 			children = (
 				745EE2AA1C2ACE7C003931D6 /* GithubSearchTests.m */,
 				745EE2AC1C2ACE7C003931D6 /* Info.plist */,
+				38D85567648D63356EC84B7C /* Listing */,
 			);
 			path = GithubSearchTests;
 			sourceTree = "<group>";
@@ -568,6 +579,7 @@
 				13297D4D1C2BD2FE0049FD9A /* ListingViewModel.m in Sources */,
 				13297D4B1C2BD2E30049FD9A /* NSArray+Functional.m in Sources */,
 				13297D4C1C2BD2F40049FD9A /* UserCollectionViewCellModel.m in Sources */,
+				38D852D237D6D5D147005A5B /* ListingViewModelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
