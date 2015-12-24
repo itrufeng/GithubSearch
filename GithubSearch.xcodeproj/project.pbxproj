@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13297D411C2BD2CE0049FD9A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A169548A5D71370EF206DB23 /* User.m */; };
+		13297D4B1C2BD2E30049FD9A /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = A169513D4D3AD260B6AFCDD3 /* NSArray+Functional.m */; };
+		13297D4C1C2BD2F40049FD9A /* UserCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695AC79D61B80E57A88252 /* UserCollectionViewCellModel.m */; };
+		13297D4D1C2BD2FE0049FD9A /* ListingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1695188C5ED075CA2EAF7A6 /* ListingViewModel.m */; };
+		38D8552B1A3DA3A4DC5745FE /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D85E12BC9C3DF133FFFDC1 /* LoginService.m */; };
 		742CC8DA1C2AFE570010AB43 /* UserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 742CC8D91C2AFE570010AB43 /* UserCollectionViewCell.m */; };
 		745EE2611C2AC26F003931D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE2601C2AC26F003931D6 /* main.m */; };
 		745EE2641C2AC26F003931D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE2631C2AC26F003931D6 /* AppDelegate.m */; };
@@ -130,6 +135,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38D85760224F76F196A8E2B6 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		38D85E12BC9C3DF133FFFDC1 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		742CC8D81C2AFE570010AB43 /* UserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCollectionViewCell.h; sourceTree = "<group>"; };
 		742CC8D91C2AFE570010AB43 /* UserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCollectionViewCell.m; sourceTree = "<group>"; };
 		745EE25C1C2AC26F003931D6 /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +289,8 @@
 			children = (
 				745EE2651C2AC26F003931D6 /* LoginViewController.h */,
 				745EE2661C2AC26F003931D6 /* LoginViewController.m */,
+				38D85E12BC9C3DF133FFFDC1 /* LoginService.m */,
+				38D85760224F76F196A8E2B6 /* LoginService.h */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -546,6 +555,7 @@
 				A1695715DF72F2DB50090BE0 /* ListingViewModel.m in Sources */,
 				A1695A4B60FC55AD01EFC0A5 /* NSArray+Functional.m in Sources */,
 				A16955E8EE8202423627A0B8 /* UserService.m in Sources */,
+				38D8552B1A3DA3A4DC5745FE /* LoginService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +563,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13297D411C2BD2CE0049FD9A /* User.m in Sources */,
 				745EE2AB1C2ACE7C003931D6 /* GithubSearchTests.m in Sources */,
+				13297D4D1C2BD2FE0049FD9A /* ListingViewModel.m in Sources */,
+				13297D4B1C2BD2E30049FD9A /* NSArray+Functional.m in Sources */,
+				13297D4C1C2BD2F40049FD9A /* UserCollectionViewCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginService.h"
+#import "Employee.h"
 #import <AFNetworking/AFNetworking.h>
 
 @interface LoginViewController ()
@@ -20,20 +22,17 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.service = [NetworkService new];
+  self.service = [[LoginService alloc] initWithNetService:[NetworkService new]];
 }
 
 - (IBAction)onLogin:(id)sender {
-  [self.service postWithUrl:[NSURL URLWithString:@"http://106.187.43.111:3000/login"]
-                  parameter:@{@"email" : @"jizhang@tw.com", @"password" : @"12345"}
-                       fail:^(NSError *error) {
-
-                       } success:^(NSDictionary *result) {
-        UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchNavigationViewController"];
-        [self presentViewController:controller
-                           animated:YES
-                         completion:NULL];
-      }];
+  [self.service loginWithEmployee:[[Employee alloc] initWithEmail:self.usernameTextField.text password:self.passwordTextField.text]
+                         complete:^(Employee *employee) {
+                           UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchNavigationViewController"];
+                           [self presentViewController:controller
+                                              animated:YES
+                                            completion:NULL];
+                         }];
 }
 
 @end

@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "NetworkService.h"
 
+@class LoginService;
+
 @interface LoginViewController : UIViewController
 
-@property (nonatomic, strong) NetworkService *service;
+@property (nonatomic, strong) LoginService *service;
 
 @end
 
