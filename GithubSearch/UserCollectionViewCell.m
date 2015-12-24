@@ -21,7 +21,7 @@
 
 - (void)configCellModel:(UserCollectionViewCellModel *)cellModel
 {
-  [self.avatorImageView setImageWithURL:[NSURL URLWithString:[cellModel avatorURL]]];
+  [self.avatorImageView setImageWithURL:[NSURL URLWithString:[cellModel avatorURL]] placeholderImage:nil];
   self.nickLabel.text = [cellModel nickName];
 }
 
