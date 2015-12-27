@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode7.2
+
+script:
+  - xcodebuild -project GithubSearch.xcodeproj -list
+  - xcodebuild -project GithubSearch.xcodeproj -scheme GithubSearch clean build -sdk iphonesimulator -destination 'name=iPhone 6s Plus'
+  - xcodebuild -project GithubSearch.xcodeproj -scheme GithubSearch test -sdk iphonesimulator -destination 'name=iPhone 6s Plus'
