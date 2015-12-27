@@ -61,8 +61,8 @@
   [secureTextField typeText:@"password00"];
   [app.buttons[@"Login"] tap];
   
-  XCUIElement *searchText = app.staticTexts[@"Search"];
-  [self waitForElementToNotAppear:searchText withTimeout:5];
+  XCUIElement *searchText = app.staticTexts[@"The username or password not correct."];
+  [self waitForElementToAppear:searchText withTimeout:5];
 }
 
 - (void)testSearch {
