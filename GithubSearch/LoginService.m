@@ -27,6 +27,7 @@
 
 - (void)loginWithEmployee:(Employee *)employee
                  complete:(void(^)(Employee *employee))complete
+                     fail:(void(^)(NSString *msg))fail
 {
   [self.service postWithUrl:[NSURL URLWithString:@"http://106.187.43.111:3000/login"]
                   parameter:@{@"email" : employee.email, @"password" : employee.password}
@@ -38,6 +39,10 @@
                       if ([result[@"code"] isEqual:@0])
                       {
                         complete(employee);
+                      }
+                      else
+                      {
+                        fail(result[@"msg"]);
                       }
                     }];
 }
