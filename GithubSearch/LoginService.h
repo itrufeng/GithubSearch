@@ -13,6 +13,7 @@
 - (instancetype)initWithNetService:(NetworkService *)service;
 
 - (void)loginWithEmployee:(Employee *)employee
-                 complete:(void (^)(Employee *employee))complete;
+                 complete:(void (^)(Employee *employee))complete
+                     fail:(void(^)(NSString *msg))fail;
 
 @end
