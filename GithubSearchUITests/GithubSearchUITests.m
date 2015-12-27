@@ -83,7 +83,7 @@
   [textField2 typeText:@"tom"];
   [app.navigationBars[@"Search"].buttons[@"Search"] tap];
   XCUIElement *userNickNameLabel = app.collectionViews.staticTexts[@"Tom"];
-  [self waitForElementToAppear:userNickNameLabel withTimeout:5];
+  [self waitForElementToAppear:userNickNameLabel withTimeout:10];
 }
 
 - (void)waitForElementToAppear:(XCUIElement *)element withTimeout:(NSTimeInterval)timeout
