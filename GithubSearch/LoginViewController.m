@@ -34,16 +34,16 @@
                                             completion:NULL];
                          }
                              fail:^(NSString *msg){
-                               UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-                                                                                              message:msg
-                                                                                       preferredStyle:UIAlertControllerStyleAlert];
-                               UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Retry" style:UIAlertActionStyleDefault
-                                                                                     handler:^(UIAlertAction *action) {
-                                                                                     }];
-                               [alert addAction:defaultAction];
-                               [self presentViewController:alert
-                                                  animated:YES
-                                                completion:nil];
+//                               UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+//                                                                                              message:msg
+//                                                                                       preferredStyle:UIAlertControllerStyleAlert];
+//                               UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Retry" style:UIAlertActionStyleDefault
+//                                                                                     handler:^(UIAlertAction *action) {
+//                                                                                     }];
+//                               [alert addAction:defaultAction];
+//                               [self presentViewController:alert
+//                                                  animated:YES
+//                                                completion:nil];
                              }];
 }
 
