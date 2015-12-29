@@ -29,7 +29,7 @@
                  complete:(void(^)(Employee *employee))complete
                      fail:(void(^)(NSString *msg))fail
 {
-  [self.service postWithUrl:[NSURL URLWithString:@"http://106.187.43.111:3000/login"]
+  [self.service postWithUrl:[NSURL URLWithString:@"http://54.169.112.42:3000/login"]
                   parameter:@{@"email" : employee.email, @"password" : employee.password}
                        fail:^(NSError *error) {
                          NSLog(@"error:%@", error);
